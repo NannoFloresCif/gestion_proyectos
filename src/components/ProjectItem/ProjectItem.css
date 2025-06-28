@@ -1,0 +1,23 @@
+.project-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.project-item h3 {
+  margin-top: 0;
+  color: #0056b3;
+}
+
+.project-item p {
+  margin-bottom: 10px;
+}
+
+.project-item-divider {
+  /* Este estilo ya no es necesario si cada item tiene su propio borde,
+     pero lo dejamos por si se quiere usar en otro lado. */
+  border: none;
+  border-top: 1px solid #eee;
+}
