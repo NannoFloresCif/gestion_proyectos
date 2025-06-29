@@ -1,11 +1,11 @@
-const functions = require("firebase-functions");
-const admin = require("firebase-admin");
+import * as functions from "firebase-functions";
+import * as admin from "firebase-admin";
 
 // Inicializamos el SDK de Admin para que la función tenga permisos para acceder a Firestore.
 admin.initializeApp();
 
 // Creamos nuestra función "onCall". Este tipo de función es segura y fácil de llamar desde el cliente.
-exports.deleteProject = functions.https.onCall(async (data, context) => {
+export const deleteProject = functions.https.onCall(async (data, context) => {
   // 'data' contiene los datos que enviamos desde nuestra app de React.
   const projectId = data.projectId;
 
